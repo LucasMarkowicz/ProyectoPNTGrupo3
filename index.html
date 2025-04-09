@@ -4,18 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Di Pasta</title>
-    <link rel="shortcut icon" href="Imagenes/logo.png">
+    <link rel="shortcut icon" href="Imagenes/logo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Casa di Pasta</a>
+        <div><img
+          src="Imagenes/logo sin fondo.png"
+          alt="Logo de Casa di Pasta"
+          id="imagen_navbar"
+        /><a class="navbar-brand" href="#">Casa di Pasta</a></div>
+      
         <button
           class="navbar-toggler"
           type="button"
@@ -50,95 +59,109 @@
     </nav>
 
     <!-- Main -->
-      <main class="menu-section">
-        <h2 class="text-center">"La tradición italiana servida en tu mesa"</h2>
+    <main class="menu-section">
+      <h2 class="text-center">"La tradición italiana servida en tu mesa"</h2>
 
-        <div id="entradas">
-          <div class="section-title"><img src="Imagenes/entradas.png" alt="Bebidas" id="icono_H2"> Entradas</div>
-          <ul class="menu-list">
-            <li><span>Focaccia con romero</span><span>$1800</span></li>
-            <li><span>Burrata con tomates cherry</span><span>$3200</span></li>
-            <li><span>Carpaccio de ternera</span><span>$2900</span></li>
-            <li><span>Tabla de antipasto</span><span>$3600</span></li>
-            <li><span>Provoleta con albahaca</span><span>$2500</span></li>
-            <li><span>Aceitunas marinadas</span><span>$1300</span></li>
-            <li><span>Bruschetta clásica</span><span>$1900</span></li>
-            <li><span>Ensalada caprese</span><span>$2400</span></li>
-            <li><span>Sopa minestrone</span><span>$2200</span></li>
-            <li><span>Pan de ajo con queso</span><span>$1700</span></li>
-            <li><span>Alcauciles al horno</span><span>$2100</span></li>
-            <li><span>Croquetas de mozzarella</span><span>$2300</span></li>
-          </ul>
+      <div id="entradas">
+        <div class="section-title">
+          <img src="Imagenes/entradas.png" alt="Bebidas" id="icono_H2" />
+          Entradas
         </div>
+        <ul class="menu-list">
+          <li><span>Focaccia con romero</span><span>$1800</span></li>
+          <li><span>Burrata con tomates cherry</span><span>$3200</span></li>
+          <li><span>Carpaccio de ternera</span><span>$2900</span></li>
+          <li><span>Tabla de antipasto</span><span>$3600</span></li>
+          <li><span>Provoleta con albahaca</span><span>$2500</span></li>
+          <li><span>Aceitunas marinadas</span><span>$1300</span></li>
+          <li><span>Bruschetta clásica</span><span>$1900</span></li>
+          <li><span>Ensalada caprese</span><span>$2400</span></li>
+          <li><span>Sopa minestrone</span><span>$2200</span></li>
+          <li><span>Pan de ajo con queso</span><span>$1700</span></li>
+          <li><span>Alcauciles al horno</span><span>$2100</span></li>
+          <li><span>Croquetas de mozzarella</span><span>$2300</span></li>
+        </ul>
+      </div>
 
-        <div id="pastas">
-          <div class="section-title"><img src="Imagenes/pastaArtesanal.png" alt="Bebidas" id="icono_H2"> Pastas Artesanales</div>
-          <ul class="menu-list">
-            <li><span>Spaghetti al dente</span><span>$4200</span></li>
-            <li><span>Tallarines caseros</span><span>$4100</span></li>
-            <li><span>Ñoquis de papa artesanal</span><span>$4000</span></li>
-            <li><span>Lasaña de la Nonna</span><span>$4500</span></li>
-            <li>
-              <span>Ravioles de ricotta y espinaca</span><span>$4200</span>
-            </li>
-            <li><span>Fetuccine al huevo</span><span>$4100</span></li>
-            <li><span>Canelones gratinados</span><span>$4400</span></li>
-            <li><span>Pappardelle toscano</span><span>$4300</span></li>
-          </ul>
+      <div id="pastas">
+        <div class="section-title">
+          <img src="Imagenes/pastaArtesanal.png" alt="Bebidas" id="icono_H2" />
+          Pastas Artesanales
         </div>
+        <ul class="menu-list">
+          <li><span>Spaghetti al dente</span><span>$4200</span></li>
+          <li><span>Tallarines caseros</span><span>$4100</span></li>
+          <li><span>Ñoquis de papa artesanal</span><span>$4000</span></li>
+          <li><span>Lasaña de la Nonna</span><span>$4500</span></li>
+          <li><span>Ravioles de ricotta y espinaca</span><span>$4200</span></li>
+          <li><span>Fetuccine al huevo</span><span>$4100</span></li>
+          <li><span>Canelones gratinados</span><span>$4400</span></li>
+          <li><span>Pappardelle toscano</span><span>$4300</span></li>
+        </ul>
+      </div>
 
-        <div id="salsas">
-          <div class="section-title"><img src="Imagenes/Salsa.png" alt="Bebidas" id="icono_H2"> Salsas Tradicionales</div>
-          <ul class="menu-list">
-            <li>
-              <span>Carbonara (panceta, yema y parmesano)</span
-              ><span>$900</span>
-            </li>
-            <li><span>Ragù alla Bolognese</span><span>$950</span></li>
-            <li><span>Pesto Genovés</span><span>$850</span></li>
-            <li><span>Salsa Alfredo</span><span>$800</span></li>
-            <li><span>Pomodoro fresco</span><span>$700</span></li>
-            <li><span>Cuattro Formaggi</span><span>$1000</span></li>
-            <li><span>Burro e Limone</span><span>$750</span></li>
-            <li><span>Arrabbiata picante</span><span>$800</span></li>
-          </ul>
+      <div id="salsas">
+        <div class="section-title">
+          <img src="Imagenes/Salsa.png" alt="Bebidas" id="icono_H2" /> Salsas
+          Tradicionales
         </div>
+        <ul class="menu-list">
+          <li>
+            <span>Carbonara (panceta, yema y parmesano)</span><span>$900</span>
+          </li>
+          <li><span>Ragù alla Bolognese</span><span>$950</span></li>
+          <li><span>Pesto Genovés</span><span>$850</span></li>
+          <li><span>Salsa Alfredo</span><span>$800</span></li>
+          <li><span>Pomodoro fresco</span><span>$700</span></li>
+          <li><span>Cuattro Formaggi</span><span>$1000</span></li>
+          <li><span>Burro e Limone</span><span>$750</span></li>
+          <li><span>Arrabbiata picante</span><span>$800</span></li>
+        </ul>
+      </div>
 
-        <div id="postres">
-          <div class="section-title"><img src="Imagenes/postree.png" alt="Bebidas" id="icono_H2"> Postres</div>
-          <ul class="menu-list">
-            <li><span>Tiramisú</span><span>$1700</span></li>
-            <li><span>Cannoli siciliano</span><span>$1500</span></li>
-            <li><span>Panna cotta</span><span>$1600</span></li>
-            <li><span>Helado artesanal</span><span>$1300</span></li>
-            <li><span>Budín de pan italiano</span><span>$1400</span></li>
-            <li><span>Frutas al vino tinto</span><span>$1600</span></li>
-            <li><span>Semifreddo de avellanas</span><span>$1800</span></li>
-            <li><span>Tarta de ricotta</span><span>$1500</span></li>
-          </ul>
+      <div id="postres">
+        <div class="section-title">
+          <img src="Imagenes/postree.png" alt="Bebidas" id="icono_H2" /> Postres
         </div>
+        <ul class="menu-list">
+          <li><span>Tiramisú</span><span>$1700</span></li>
+          <li><span>Cannoli siciliano</span><span>$1500</span></li>
+          <li><span>Panna cotta</span><span>$1600</span></li>
+          <li><span>Helado artesanal</span><span>$1300</span></li>
+          <li><span>Budín de pan italiano</span><span>$1400</span></li>
+          <li><span>Frutas al vino tinto</span><span>$1600</span></li>
+          <li><span>Semifreddo de avellanas</span><span>$1800</span></li>
+          <li><span>Tarta de ricotta</span><span>$1500</span></li>
+        </ul>
+      </div>
 
-        <div id="bebidas">
-          <div class="section-title"><img src="Imagenes/bebida.png" alt="Bebidas" id="icono_H2">Bebidas</div>
-          <ul class="menu-list">
-            <li><span>Agua mineral</span><span>$800</span></li>
-            <li><span>Gaseosa</span><span>$1000</span></li>
-            <li><span>Limonada casera</span><span>$1300</span></li>
-            <li><span>Cerveza italiana</span><span>$1500</span></li>
-            <li><span>Aperol Spritz</span><span>$1900</span></li>
-            <li><span>Vino tinto (copa)</span><span>$1600</span></li>
-            <li><span>Vino blanco (copa)</span><span>$1600</span></li>
-            <li><span>Espresso italiano</span><span>$900</span></li>
-          </ul>
+      <div id="bebidas">
+        <div class="section-title">
+          <img src="Imagenes/bebida.png" alt="Bebidas" id="icono_H2" />Bebidas
         </div>
+        <ul class="menu-list">
+          <li><span>Agua mineral</span><span>$800</span></li>
+          <li><span>Gaseosa</span><span>$1000</span></li>
+          <li><span>Limonada casera</span><span>$1300</span></li>
+          <li><span>Cerveza italiana</span><span>$1500</span></li>
+          <li><span>Aperol Spritz</span><span>$1900</span></li>
+          <li><span>Vino tinto (copa)</span><span>$1600</span></li>
+          <li><span>Vino blanco (copa)</span><span>$1600</span></li>
+          <li><span>Espresso italiano</span><span>$900</span></li>
+        </ul>
+      </div>
 
-        <p class="info-extra">🍽️ Costo de cubierto por persona: $1000</p>
-        <p class="info-extra">💵 Pagando en efectivo tenés 20% de descuento.</p>
-      </main>
+      <p class="info-extra">🍽️ Costo de cubierto por persona: $1000</p>
+      <p class="info-extra">💵 Pagando en efectivo tenés 20% de descuento.</p>
+    </main>
 
     <!-- Footer -->
     <footer id="contacto">
-      <img src="Imagenes/logo sin fondo.png" alt="Logo de Casa di Pasta" id="imagen_footer">
+      <img
+        src="Imagenes/logo sin fondo.png"
+        alt="Logo de Casa di Pasta"
+        id="imagen_footer"
+      />
       <h5>Casa di Pasta</h5>
       <p>📍 Av. Italia 456, Buenos Aires</p>
       <p>📞 +54 11 5678-1234</p>
