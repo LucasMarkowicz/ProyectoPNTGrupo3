@@ -13,6 +13,9 @@ body {
     margin-top: 80px;
   }
 
+  #icono_H2 {
+    height: 60px; vertical-align: middle; margin-right: 8px; padding-bottom: 10px;
+  }
 
   .section-title {
     font-size: 28px;
@@ -38,6 +41,10 @@ body {
   .info-extra {
     font-style: italic;
     margin-top: 30px;
+  }
+
+  #imagen_footer{
+    height: 100px;
   }
 
   footer {
