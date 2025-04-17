@@ -52,7 +52,10 @@
               <a class="nav-link" href="#bebidas">Bebidas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link" href="#myModal">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Horarios</a>
             </li>
           </ul>
         </div>
@@ -154,11 +157,41 @@
 
       <p class="info-extra">🍽️ Costo de cubierto por persona: $1000</p>
       <p class="info-extra">💵 Pagando en efectivo tenés 20% de descuento.</p>
+    <!-- Botón para abrir el modal -->
+
+  <!-- Estructura del modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <div id="reservas"> 
+        <h5 class="consulta">Haznos tu consulta</h5>
+        <form action="" method="post" name="reservas">
+          <label for="">Ingresa tu nombre</label>
+          <input type="text">
+          <label for="">Ingresa tu email</label>
+          <input type="email">
+          <label for="">Ingresa tu numero de teléfono</label>
+          <input type="number">
+          <label for="">Selecciona tu tipo de consulta</label>
+          <select name="lista" id="selectList">
+            <option value="reservas">Reservas</option>
+            <option value="opiniones">Opiniones</option>
+            <option value="sugerencias">Sugerencias</option>
+          </select>
+          <label for="">Ingresa tu consulta</label>
+          <textarea name="" id="" rows="5" cols="40"></textarea>
+          <input type="submit" value="Enviar" class="submitButton">
+        </form>
+      </div>
+    </div>
+  </div>
+    
     </main>
 
     <!-- Footer -->
     <footer id="contacto">
-      <img
+      <div>
+        <img
         src="Imagenes/logo sin fondo.png"
         alt="Logo de Casa di Pasta"
         id="imagen_footer"
@@ -171,6 +204,7 @@
         <a href="mailto:contacto@casadipasta.com">contacto@casadipasta.com</a>
       </p>
       <p>🕒 Lunes a Sábado de 12:00 a 16:00 y de 20:00 a 00:00</p>
+    </div>
     </footer>
 
     <!-- Bootstrap JS -->
