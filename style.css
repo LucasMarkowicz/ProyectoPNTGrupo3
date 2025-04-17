@@ -111,12 +111,10 @@ body {
     z-index: 1000;
   }
 
-  /* Mostrar el modal cuando es el target */
   .modal:target {
     display: flex;
   }
 
-  /* Contenido del modal */
   .modal-content {
     background-color: #212529;
     color: white;
@@ -128,7 +126,6 @@ body {
     position: relative;
   }
 
-  /* Botón de cerrar */
   .close-btn {
     position: absolute;
     top: 10px;

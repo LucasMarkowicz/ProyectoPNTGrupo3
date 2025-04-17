@@ -17,15 +17,17 @@
   </head>
   <body>
     <!-- Navbar -->
-     <!-- comentario blablabla-->
+    <!-- comentario blablabla-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <div><img
-          src="Imagenes/logo sin fondo.png"
-          alt="Logo de Casa di Pasta"
-          id="imagen_navbar"
-        /><a class="navbar-brand" href="#">Casa di Pasta</a></div>
-      
+        <div>
+          <img
+            src="Imagenes/logo sin fondo.png"
+            alt="Logo de Casa di Pasta"
+            id="imagen_navbar"
+          /><a class="navbar-brand" href="#">Casa di Pasta</a>
+        </div>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -157,54 +159,64 @@
 
       <p class="info-extra">🍽️ Costo de cubierto por persona: $1000</p>
       <p class="info-extra">💵 Pagando en efectivo tenés 20% de descuento.</p>
-    <!-- Botón para abrir el modal -->
+      <!-- Botón para abrir el modal -->
 
-  <!-- Estructura del modal -->
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <a href="#" class="close-btn">×</a>
-      <div id="reservas"> 
-        <h5 class="consulta">Haznos tu consulta</h5>
-        <form action="" method="post" name="reservas">
-          <label for="">Ingresa tu nombre</label>
-          <input type="text">
-          <label for="">Ingresa tu email</label>
-          <input type="email">
-          <label for="">Ingresa tu numero de teléfono</label>
-          <input type="number">
-          <label for="">Selecciona tu tipo de consulta</label>
-          <select name="lista" id="selectList">
-            <option value="reservas">Reservas</option>
-            <option value="opiniones">Opiniones</option>
-            <option value="sugerencias">Sugerencias</option>
-          </select>
-          <label for="">Ingresa tu consulta</label>
-          <textarea name="" id="" rows="5" cols="40"></textarea>
-          <input type="submit" value="Enviar" class="submitButton">
-        </form>
+      <!-- Estructura del modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <a href="#" class="close-btn">×</a>
+          <div id="reservas">
+            <h5 class="consulta">Haznos tu consulta</h5>
+            <form action="/procesar-reserva" method="post" name="reservas">
+              <label for="nombre">Ingresa tu nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+
+              <label for="email">Ingresa tu email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="telefono">Ingresa tu número de teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required />
+
+              <label for="tipoConsulta">Selecciona tu tipo de consulta</label>
+              <select name="tipoConsulta" id="tipoConsulta" required>
+                <option value="reservas">Reservas</option>
+                <option value="opiniones">Opiniones</option>
+                <option value="sugerencias">Sugerencias</option>
+              </select>
+
+              <label for="consulta">Ingresa tu consulta</label>
+              <textarea
+                name="consulta"
+                id="consulta"
+                rows="5"
+                cols="40"
+                required
+              ></textarea>
+
+              <input type="submit" value="Enviar" class="submitButton" />
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-    
     </main>
 
     <!-- Footer -->
     <footer id="contacto">
       <div>
         <img
-        src="Imagenes/logo sin fondo.png"
-        alt="Logo de Casa di Pasta"
-        id="imagen_footer"
-      />
-      <h5>Casa di Pasta</h5>
-      <p>📍 Av. Italia 456, Buenos Aires</p>
-      <p>📞 +54 11 5678-1234</p>
-      <p>
-        📧
-        <a href="mailto:contacto@casadipasta.com">contacto@casadipasta.com</a>
-      </p>
-      <p>🕒 Lunes a Sábado de 12:00 a 16:00 y de 20:00 a 00:00</p>
-    </div>
+          src="Imagenes/logo sin fondo.png"
+          alt="Logo de Casa di Pasta"
+          id="imagen_footer"
+        />
+        <h5>Casa di Pasta</h5>
+        <p>📍 Av. Italia 456, Buenos Aires</p>
+        <p>📞 +54 11 5678-1234</p>
+        <p>
+          📧
+          <a href="mailto:contacto@casadipasta.com">contacto@casadipasta.com</a>
+        </p>
+        <p>🕒 Lunes a Sábado de 12:00 a 16:00 y de 20:00 a 00:00</p>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
